@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ./partials/head %>
+  </head>
+  <body>
+    <% include ./partials/nav %>
+    <div class="container" id="container">
+      <h1><%= title %></h1>
+      
+      <ul id="users">
+        <% users.forEach(function(v){ %>
+          <li id="<%= v %>"><%= v %></li>
+        <% }) %>
+      </ul>
+    </div>
+    <% include ./partials/scripts %>
+  </body>
+</html>

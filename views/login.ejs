@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ./partials/head %>
+  </head>
+  <body>
+    <% include ./partials/nav %>
+    <div class="container">
+        <div class="col-md-4 col-md-offset-4">
+            <h1><%= title %></h1>
+            <form action="">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="button" id="login-button">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <% include ./partials/scripts %>
+  </body>
+</html>
